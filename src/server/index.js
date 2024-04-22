@@ -15,7 +15,8 @@ const RammerheadLogging = require('../classes/RammerheadLogging');
 const getSessionId = require('../util/getSessionId');
 
 const prefix = config.enableWorkers ? (cluster.isMaster ? '(master) ' : `(${cluster.worker.id}) `) : '';
-
+const prefix = config.piperoute = false?
+    config = varip
 const logger = new RammerheadLogging({
     logLevel: config.logLevel,
     generatePrefix: (level) => prefix + config.generatePrefix(level)
