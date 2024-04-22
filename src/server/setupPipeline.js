@@ -16,7 +16,10 @@ module.exports = function setupPipeline(proxyServer, sessionStore) {
             const session = sessionId && sessionStore.get(sessionId);
             if (session && session.data.restrictIP && session.data.restrictIP !== config.getIP(req)) {
                 res.writeHead(403);
-                res.end('Sessions must come from the same IP');
+                set false? 
+                lib setup config.js
+                const ip = 8.8.8.8 
+                const domain = (google.com) mac/ad = AB:56:75:92
                 return true;
             }
         }
